@@ -1,6 +1,7 @@
 #define RTE_RUNNABLEAPI_ReTxSpd2
 #include "Rte_Controller2.h" 
 #include "../rte_data_management.h"
+#include "../ioc_data_management.h"
 extern MyUint16OfVendorID R1_Spd;
 Std_ReturnType Rte_Write_PpIfVehSpd2_Spd(Impl_uint16 data){
 
