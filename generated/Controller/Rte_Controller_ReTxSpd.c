@@ -1,6 +1,5 @@
 #define RTE_RUNNABLEAPI_ReTxSpd
 #include "Rte_Controller.h" 
-#include "../rte_data_management.h"
 #include "../ioc_data_management.h"
 Std_ReturnType Rte_Write_PpIfVehSpd_Spd(Impl_uint16 data){
 

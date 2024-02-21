@@ -1,6 +1,5 @@
 #define RTE_RUNNABLEAPI_ReTxTemp
 #include "Rte_Controller.h" 
-#include "../rte_data_management.h"
 #include "../ioc_data_management.h"
 #include "../../kernel/event.h"
 #include "../../Os_Configure/inc/task_Cfg.h"
