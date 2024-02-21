@@ -10,11 +10,11 @@ Std_ReturnType Rte_Receive_RpIfTemperature_Temp(Impl_uint8* data, Std_Transforme
      Std_ReturnType return_value0 = RTE_Dequeue(&RB_R3_Temp, data, sizeof(MyUint8OfVendorID));
      if(return_value0 == RTE_E_NO_DATA) {
           TickType max = 0;
-          GetAlarm(alarm1,&max)
+          GetAlarm(alarm1,&max);
           max = max + 10;
           TickType temp = 0;
-          WaitEvent(event1);
-          GetAlarm(alarm1,&temp)
+          WaitEvent(T11,event1);
+          GetAlarm(alarm1,&temp);
           if(temp >= max) {
                return RTE_E_TIMEOUT;
           }

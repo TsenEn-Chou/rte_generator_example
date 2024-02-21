@@ -1,4 +1,5 @@
 #include "rte_data_management.h"
+#pragma section USER_SHARED_SEC
 
 MyUint8OfVendorID R1_Spd = 111;
 uint32 R1_Spd_first_reception_flag = 1U;

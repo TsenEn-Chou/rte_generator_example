@@ -2,6 +2,8 @@
 #include "Rte_Controller.h" 
 #include "../rte_data_management.h"
 #include "../../kernel/event.h"
+#include "../../Os_Configure/inc/task_Cfg.h"
+#include "../../Os_Configure/inc/event_Cfg.h"
 extern RingBuffer RB_R3_Temp;
 Std_ReturnType Rte_Send_PpIfTemperature_Temp(Impl_uint8 data, Std_TransformerError transformerError){
 
