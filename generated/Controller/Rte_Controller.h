@@ -21,7 +21,7 @@ typedef struct Rte_CDS_Controller Rte_CDS_Controller;
 //struct Rte_CDS_Controller { <component data sections> }; 
  
 #ifdef RTE_RUNNABLEAPI_ReTxTemp
-Std_ReturnType Rte_Send_PpIfTemperature_Temp(Impl_uint8 data, Std_TransformerError transformerError);
+Std_ReturnType Rte_Send_PpIfTemperature_Temp(Impl_uint16 data, Std_TransformerError transformerError);
  
 #endif
  
@@ -30,7 +30,7 @@ Std_ReturnType Rte_Send_PpIfTemperature_Temp(Impl_uint8 data, Std_TransformerErr
 #endif
  
 #ifdef RTE_RUNNABLEAPI_ReTxSpd
-Std_ReturnType Rte_Write_PpIfVehSpd_Spd(Impl_uint8 data);
+Std_ReturnType Rte_Write_PpIfVehSpd_Spd(Impl_uint16 data);
 Std_ReturnType Rte_Invalidate_PpIfVehSpd_Spd();
  
 #endif
@@ -40,7 +40,7 @@ Std_ReturnType Rte_Invalidate_PpIfVehSpd_Spd();
 #endif
  
 #ifdef RTE_RUNNABLEAPI_ReTxAcc
-Std_ReturnType Rte_Write_PpIfVehAcc_Acc(Impl_uint8 data, Std_TransformerForward forwardedStatus, Std_TransformerError transformerError);
+Std_ReturnType Rte_Write_PpIfVehAcc_Acc(Impl_uint16 data, Std_TransformerForward forwardedStatus, Std_TransformerError transformerError);
 Std_ReturnType Rte_Invalidate_PpIfVehAcc_Acc(Std_TransformerError transformerError);
  
 #endif

@@ -21,7 +21,7 @@ typedef struct Rte_CDS_Observation Rte_CDS_Observation;
 //struct Rte_CDS_Observation { <component data sections> }; 
  
 #ifdef RTE_RUNNABLEAPI_ReRxAcc
-Std_ReturnType Rte_Read_RpIfVehAcc_Acc(Impl_uint8* data, Std_TransformerError transformerError);
+void Rte_Read_RpIfVehAcc_Acc(Impl_uint16* data, Std_TransformerError transformerError);
  
 #endif
  
@@ -30,7 +30,7 @@ Std_ReturnType Rte_Read_RpIfVehAcc_Acc(Impl_uint8* data, Std_TransformerError tr
 #endif
  
 #ifdef RTE_RUNNABLEAPI_ReRxSpd
-Impl_uint8 Rte_DRead_RpIfVehSpd_Spd();
+Impl_uint16 Rte_DRead_RpIfVehSpd_Spd();
  
 #endif
  
@@ -39,7 +39,7 @@ Impl_uint8 Rte_DRead_RpIfVehSpd_Spd();
 #endif
  
 #ifdef RTE_RUNNABLEAPI_ReRxTemp
-Std_ReturnType Rte_Receive_RpIfTemperature_Temp(Impl_uint8* data, Std_TransformerError transformerError);
+void Rte_Receive_RpIfTemperature_Temp(Impl_uint16* data, Std_TransformerError transformerError);
  
 #endif
  

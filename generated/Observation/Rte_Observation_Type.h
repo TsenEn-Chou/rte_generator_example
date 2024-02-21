@@ -7,7 +7,7 @@ extern "C" {
 #define RTE_Observation_TYPE_H
 
 #include "../Rte_Type.h"
-#define Impl_uint8 MyUint8OfVendorID
+#define Impl_uint16 MyUint16OfVendorID
 #endif
 
 #ifdef __cplusplus /* [SWS_Rte_07126]  */
