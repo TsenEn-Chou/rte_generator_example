@@ -1,12 +1,6 @@
 TASK(T001){
-    ReTxTemp();
-    ReTxAcc();
-    ReTxSpd();
     TerminateTask();
 }
 TASK(T011){
-    ReRxTemp();
-    ReRxAcc();
-    ReRxSpd();
     TerminateTask();
 }

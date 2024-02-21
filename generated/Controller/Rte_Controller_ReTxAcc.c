@@ -1,5 +1,6 @@
 #define RTE_RUNNABLEAPI_ReTxAcc
 #include "Rte_Controller.h" 
+#include "../rte_data_management.h"
 #include "../ioc_data_management.h"
 Std_ReturnType Rte_Write_PpIfVehAcc_Acc(Impl_uint16 data, Std_TransformerForward forwardedStatus, Std_TransformerError transformerError){
 
