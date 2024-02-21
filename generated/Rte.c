@@ -6,6 +6,7 @@ TASK(T001){
 }
 TASK(T011){
     ReRxTemp();
+    ReRxTemp2();
     ReRxAcc();
     ReRxSpd();
     TerminateTask();

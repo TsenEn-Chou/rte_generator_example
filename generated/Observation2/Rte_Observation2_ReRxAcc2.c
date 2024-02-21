@@ -1,9 +1,9 @@
-#define RTE_RUNNABLEAPI_ReRxAcc
-#include "Rte_Observation.h" 
+#define RTE_RUNNABLEAPI_ReRxAcc2
+#include "Rte_Observation2.h" 
 #include "../rte_data_management.h"
 extern MyUint16OfVendorID R2_Acc;
 extern uint32 R2_Acc_first_reception_flag;
-Std_ReturnType Rte_Read_RpIfVehAcc_Acc(Impl_uint16* data, Std_TransformerError transformerError){
+Std_ReturnType Rte_Read_RpIfVehAcc2_Acc(Impl_uint16* data, Std_TransformerError transformerError){
 
      Std_ReturnType      return_value0 = RTE_Fetch(data, &R2_Acc, sizeof(MyUint16OfVendorID));
      //clear first_reception_flag check
@@ -16,7 +16,7 @@ Std_ReturnType Rte_Read_RpIfVehAcc_Acc(Impl_uint16* data, Std_TransformerError t
      }
      return RTE_E_OK;
 }
-void RTE_RUNNABLE_ReRxAcc(){
-/* The algorithm of ReRxAcc */
+void RTE_RUNNABLE_ReRxAcc2(){
+/* The algorithm of ReRxAcc2 */
 return;
 }
