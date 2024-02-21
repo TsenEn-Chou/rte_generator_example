@@ -1,7 +1,6 @@
 #define RTE_RUNNABLEAPI_ReRxAcc
 #include "Rte_Observation.h" 
 #include "../rte_data_management.h"
-#include "../ioc_data_management.h"
 extern MyUint16OfVendorID R2_Acc;
 extern uint32 R2_Acc_first_reception_flag;
 Std_ReturnType Rte_Read_RpIfVehAcc_Acc(Impl_uint16* data, Std_TransformerError transformerError){

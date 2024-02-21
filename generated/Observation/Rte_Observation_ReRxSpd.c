@@ -1,7 +1,6 @@
 #define RTE_RUNNABLEAPI_ReRxSpd
 #include "Rte_Observation.h" 
 #include "../rte_data_management.h"
-#include "../ioc_data_management.h"
 extern MyUint16OfVendorID R1_Spd;
 extern uint32 R1_Spd_first_reception_flag;
 Impl_uint16 Rte_DRead_RpIfVehSpd_Spd(){

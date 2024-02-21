@@ -3,8 +3,8 @@ extern "C" {
 #endif /* __cplusplus */
 
 //[SWS_Rte_07678]
-#ifndef RTE_Observation2_TYPE_H
-#define RTE_Observation2_TYPE_H
+#ifndef RTE_Controller2_TYPE_H
+#define RTE_Controller2_TYPE_H
 
 #include "../Rte_Type.h"
 #define Impl_uint16 MyUint16OfVendorID

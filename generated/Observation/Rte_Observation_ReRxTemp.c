@@ -1,7 +1,6 @@
 #define RTE_RUNNABLEAPI_ReRxTemp
 #include "Rte_Observation.h" 
 #include "../rte_data_management.h"
-#include "../ioc_data_management.h"
 #include "../../kernel/alarm.h"
 #include "../../kernel/event.h"
 #include "../../Os_Configure/inc/event_Cfg.h"
