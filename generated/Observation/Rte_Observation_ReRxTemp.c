@@ -10,14 +10,32 @@ Std_ReturnType Rte_Receive_RpIfTemperature_Temp(Impl_uint16* data, Std_Transform
 
      Std_ReturnType return_value0 = RTE_Dequeue(&RB_R3_Temp, data, sizeof(MyUint16OfVendorID));
      if(return_value0 == RTE_E_NO_DATA) {
-          return RTE_E_NO_DATA;
+          TickType max = 0;
+          GetAlarm(alarm1,&max);
+          max = max + 10;
+          TickType temp = 0;
+          WaitEvent(T11,event1);
+          GetAlarm(alarm1,&temp);
+          if(temp >= max) {
+               return RTE_E_TIMEOUT;
+          }
+          RTE_Dequeue(&RB_R3_Temp, data, sizeof(MyUint16OfVendorID));
      }
      else if(return_value0 == RTE_E_NOK) {
           return RTE_E_NOK;
      }
      Std_ReturnType return_value1 = IocReceive_Q3(data);
      if(return_value1 == IOC_E_NO_DATA) {
-          return RTE_E_NO_DATA;
+          TickType max = 0;
+          GetAlarm(alarm1,&max);
+          max = max + 10;
+          TickType temp = 0;
+          WaitEvent(event1);
+          GetAlarm(alarm1,&temp);
+          if(temp >= max) {
+               return RTE_E_TIMEOUT;
+          }
+          IocReceive_Q3(data);
      }
      else if(return_value1 == IOC_E_NOK) {
           return RTE_E_NOK;

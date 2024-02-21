@@ -9,6 +9,7 @@ extern RingBuffer RB_R3_Temp;
 Std_ReturnType Rte_Send_PpIfTemperature2_Temp(Impl_uint16 data, Std_TransformerError transformerError){
 
      Std_ReturnType return_value0 = RTE_Enqueue(&RB_R3_Temp, &data, sizeof(MyUint16OfVendorID));
+     SetEvent(T02,event1);
      if(return_value0 == RTE_E_LIMIT) {
           return RTE_E_LIMIT;
      }
